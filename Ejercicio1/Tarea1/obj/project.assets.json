@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Chelo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj",
+      "projectUniqueName": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj",
       "projectName": "tarea1",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\obj\\",
+      "projectPath": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj",
+      "packagesPath": "C:\\Users\\Chelo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Chelo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -38,11 +38,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
