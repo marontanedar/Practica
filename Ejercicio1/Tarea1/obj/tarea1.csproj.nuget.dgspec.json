@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj": {}
+    "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj": {
+    "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj",
+        "projectUniqueName": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj",
         "projectName": "tarea1",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\tarea1.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\ejercicio1\\tarea1\\obj\\",
+        "projectPath": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\tarea1.csproj",
+        "packagesPath": "C:\\Users\\Chelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chelo\\OneDrive\\Documents\\Documentos\\LaSalleFP\\06SextoSemestre\\M09\\UF2\\Practica\\Ejercicio1\\Tarea1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Chelo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -48,12 +53,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
