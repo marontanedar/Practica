@@ -1,60 +1,43 @@
 ## 🏥 Simulación de Hospital con Hilos en C#
-Este proyecto implementa una simulación de pacientes en un hospital utilizando hilos en C#. Cada paciente tiene diferentes atributos y pasa por varias etapas en su atención.
+Este programa simula la atención de pacientes en un hospital, donde los pacientes deben ser atendidos en el orden en que llegaron. Cada paciente pasa por una consulta médica y, si es necesario, por un proceso de diagnóstico. Se garantiza que el orden de llegada de los pacientes se respeta tanto en la consulta como en las pruebas diagnósticas.
 
-image
+![image](https://github.com/user-attachments/assets/ce1f6c2f-e9c9-4e49-934e-d968977fd634)
 
 ## 📌 Características
-Cada paciente tiene un ID único generado aleatoriamente.
+Los pacientes llegan al hospital en orden secuencial.
 
-Se registra el tiempo de llegada al hospital.
+Solo pueden pasar a la consulta si hay un médico disponible.
 
-Se asigna un tiempo de consulta aleatorio entre 5 y 15 segundos.
+Después de la consulta, si requieren pruebas diagnósticas, deben realizarlas en el mismo orden en el que llegaron.
 
-Se maneja el estado del paciente en las siguientes etapas:
-
-- EsperaConsulta: Ha llegado pero aún no entra en consulta.
-
-- Consulta: Está en consulta con un médico.
-
-- EsperaDiagnostico: Ha finalizado la consulta y requiere pruebas diagnósticas.
-
-- Finalizado: Ha completado su atención.
-
-Se simula que el hospital tiene 4 médicos disponibles.
-
-Se agregó la funcionalidad de pruebas de diagnóstico:
-
-- 2 máquinas disponibles para diagnóstico.
-
-- Tiempo de diagnóstico fijo de 15 segundos.
-
-Se usa SemaphoreSlim para controlar la concurrencia y evitar que más de 4 pacientes estén en consulta simultáneamente.
-
-Se muestra información detallada en consola sobre el estado y los cambios de cada paciente.
-
+Se usa sincronización para garantizar el orden correcto de atención.
 ## 📌 Requisitos
 🔹 .NET Framework o .NET Core instalado 🔹 Compilador de C# (Visual Studio, VS Code o dotnet CLI)
 
-## ▶️ ¿Los pacientes que deben esperar para hacerse las pruebas diagnostico entran luego a hacerse las pruebas por orden de llegada? 
-No, en la implementación actual los pacientes que requieren pruebas de diagnóstico no están organizados explícitamente en una cola de espera basada en su orden de llegada. La asignación ocurre en el orden en que terminan la consulta y encuentran una máquina disponible.
+## ▶️ ¿Porque escogiste esté código? 
+Se emplea BlockingCollection<Paciente> para gestionar los pacientes en la cola de diagnóstico de manera segura entre hilos.
 
-Pruebas realizadas:
+Add() permite que los pacientes agreguen su solicitud de diagnóstico en la cola.
 
-Verifiqué cuándo cada paciente cambia su estado de "Consulta" a "EsperaDiagnostico".
+Take() permite que los pacientes sean procesados en el orden correcto, asegurando que el siguiente paciente en la fila sea atendido antes que los demás.
 
-Observé si el tiempo de espera entre consulta y diagnóstico varía, dependiendo de la disponibilidad de las máquinas.
+Sincronización con SemaphoreSlim
 
-Agregué mensajes de depuración antes y después de la asignación de las máquinas de diagnóstico.
+Un semáforo controla el acceso a los médicos (sem = new SemaphoreSlim(4)).
 
-Esto ayudó a visualizar cuándo y en qué orden los pacientes entraban a las pruebas.
+Otro semáforo (maquinasDiagnostico = new SemaphoreSlim(2)) limita el acceso a las máquinas de diagnóstico.
 
-Forcé a que varios pacientes necesitaran diagnóstico.
+Hilos para concurrencia
 
-Modifiqué el código para que todos los pacientes tuvieran requiereDiagnostico = true.
+Cada paciente es manejado en un hilo separado.
 
-Resultados
-Los pacientes solo pueden usar las máquinas si hay una disponible, lo que significa que el orden de llegada no siempre se respeta estrictamente.
+La consulta y el diagnóstico se ejecutan en paralelo, pero el diagnóstico respeta estrictamente el orden de llegada.
 
-En algunos casos, un paciente que terminó su consulta antes, pero esperó más tiempo por una máquina, ingresó después de otro que terminó la consulta más tarde pero encontró una máquina libre más rápido.
+Control del orden de diagnóstico
 
-Para garantizar un orden de llegada estricto, habría que usar una cola de prioridad o un mecanismo de sincronización adicional.
+Se usa BlockingCollection<Paciente> para garantizar que los pacientes hagan las pruebas en el orden correcto sin bloqueos manuales.
+
+Take() se usa para extraer pacientes en el orden en que llegaron.
+
+¿Por qué esta solución?
+Evita bloqueos innecesarios: Take() suspende el hilo hasta que haya un paciente disponible, evitando esperas activas y mejorando el rendimiento.
