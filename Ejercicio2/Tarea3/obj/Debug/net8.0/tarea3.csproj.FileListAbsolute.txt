@@ -1,0 +1,15 @@
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\bin\Debug\net8.0\tarea3.exe
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\bin\Debug\net8.0\tarea3.deps.json
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\bin\Debug\net8.0\tarea3.runtimeconfig.json
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\bin\Debug\net8.0\tarea3.dll
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\bin\Debug\net8.0\tarea3.pdb
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.AssemblyInfoInputs.cache
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.AssemblyInfo.cs
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.csproj.CoreCompileInputs.cache
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.sourcelink.json
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.dll
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\refint\tarea3.dll
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.pdb
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\tarea3.genruntimeconfig.cache
+C:\Users\Chelo\OneDrive\Documents\Documentos\LaSalleFP\06SextoSemestre\M09\UF2\Practica\ejercicio2\tarea3\obj\Debug\net8.0\ref\tarea3.dll
