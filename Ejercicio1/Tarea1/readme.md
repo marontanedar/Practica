@@ -19,10 +19,7 @@
 Este programa simula un hospital donde los pacientes son atendidos por médicos de manera concurrente utilizando hilos (Threads). Se emplea un semáforo (SemaphoreSlim) para controlar el acceso a los médicos disponibles y garantizar que no haya más de 4 pacientes en consulta simultáneamente.
 
 
-🏥 Simulación de Hospital con Hilos en C#
-Este programa simula un hospital donde los pacientes son atendidos por médicos de manera concurrente utilizando hilos (Threads). Se emplea un semáforo (SemaphoreSlim) para controlar el acceso a los médicos disponibles y garantizar que no haya más de 4 pacientes en consulta simultáneamente.
-
-📌 Características
+## 📌 Características
 Manejo de concurrencia: Uso de Thread para simular múltiples pacientes llegando al hospital.
 
 Control de recursos: Uso de SemaphoreSlim para restringir la cantidad de pacientes en consulta a un máximo de 4.
@@ -31,7 +28,8 @@ Asignación de médicos sin repetición: Asegura que cada médico atienda a un s
 
 Sincronización con lock: Protege la asignación y liberación de médicos con un lock para evitar condiciones de carrera.
 
-🔧 Cómo funciona el código
+
+## 🔧 Cómo funciona el código
 Inicio del programa
 
 Se crean 4 hilos que representan pacientes llegando al hospital cada 2 segundos.
@@ -52,10 +50,8 @@ Liberación del médico
 
 Tras la consulta, el médico es liberado y otro paciente puede ser atendido.
 
-📜 Código principal
-csharp
-Copiar
-Editar
+## 📜 Código principal
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -111,11 +107,12 @@ namespace tarea1
         }
     }
 }
-📌 Requisitos
+
+## 📌 Requisitos
 🔹 .NET Framework o .NET Core instalado
 🔹 Compilador de C# (Visual Studio, VS Code o dotnet CLI)
 
-▶️ Cómo ejecutar
+## ▶️ Cómo ejecutar
 Guarda el código en un archivo Program.cs.
 
 Compila el programa:
@@ -130,7 +127,8 @@ sh
 Copiar
 Editar
 ./Program.exe
-📌 Mejoras futuras
+
+## 📌 Mejoras futuras
 ✅ Manejar más pacientes y médicos dinámicamente.
 ✅ Implementar cierre del hospital cuando todos los pacientes sean atendidos.
 ✅ Usar Queue para gestionar pacientes en espera.
